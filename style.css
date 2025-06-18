@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.navbar{
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position:relative;
+    background: blend ; 
+    width: 100%; /* Make the navbar span the full width */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out the logo and navigation */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+nav ul li a{
+    transition: transform 0.5s;
+}
+nav ul li a:hover{
+    color: orangered;
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: translateY(-5px); /* Slightly lift the image on hover */
+    transition: transform 0.5s, filter 0.5s; /* Smooth transition for both effects */
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 0%;
+}
+a{
+    transition: transform 0.5s;
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 80px; /* Add padding to prevent content from overlapping the fixed navbar */
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header {
+    background: radial-gradient(circle,#fff, #ffd6d6); /* Wider radial gradient */
+    top: 0; /* Align it to the top of the page */
+    width: 100%; /* Make the header span the full width */
+    z-index: 1000; /* Ensure the header stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out the logo and navigation */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+.logo {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.logo img {
+    width: 120px; /* Adjust the size of the logo */
+    display: block;
+    margin: 0; /* Remove any margin */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+   }
+
+.logo img:hover {
+    opacity: 1; /* Fully visible on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.container {
+    padding-top: 80px; /* Add padding to prevent content from overlapping the fixed header */
+}
+
+.header .row{
+    margin-top: 10px;
+
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 100px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 80%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b ;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #000000;
+    font-weight: normal;
+}
+.col-4{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+/*-------offer--------*/
+.offer{
+    background: radial-gradient(circle, #fff, #ffd6d6); /* Wider radial gradient */
+    margin-top: 80px;
+    padding: 50px 50px; /* Increase padding for a wider background */
+    text-align: center; /* Center-align content */
+    width: 100%; /* Ensure the section spans the full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+.navbar img {
+    mix-blend-mode: multiply; /* Blend the shopping cart with the background */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar img:hover {
+    opacity: 1; /* Fully visible on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.header .row .col-2 img {
+    mix-blend-mode: multiply; /* Blend the header image with the background */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.col-2 .offer img {
+    mix-blend-mode: multiply; /* Blend the offer image with the background */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    padding: 50px;
+}
+.offer img {
+    mix-blend-mode: multiply; /* Blend the offer image with the background */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    max-width: 80%; /* Ensure the image scales properly */
+    padding: 30px; /* Add padding around the image */
+}
+
+.offer img:hover {
+    opacity: 1; /* Fully visible on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/*-------testimonial--------*/
+.testimonial{
+     padding-top: 100px;
+}
+.testimonial .row {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Add space between testimonials */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: nowrap; /* Prevent wrapping to keep testimonials side by side */
+    gap: 10px; /* Add spacing between testimonials */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */  
+    height: fit-content;
+}
+
+.testimonial .col-3 {
+    flex: 30%; /* Allow flexibility and set each testimonial to take up 30% of the row */
+    max-width: 30%; /* Ensure the width does not exceed 30% */
+    margin: 10px; /* Add spacing between testimonials */
+    text-align: center; /* Center-align the content */
+    padding: 20px; /* Add padding for better spacing */   
+    box-sizing: border-box; /* Include padding in the width calculation */ 
+    box-shadow: #555 0px 0px 10px; /* Add shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    max-height: 100%;
+    
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;  
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 14px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-size: 20px;
+    margin: 10px 0;
+    color: #777;   
+}
+
+/*-------brands--------*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%); /* Make images grayscale */
+    padding: 20px;
+}
+.col-5 img:hover{
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: translateY(-5px); /* Slightly lift the image on hover */
+    transition: transform 0.5s, filter 0.5s; /* Smooth transition for both effects */
+}
+/*-------footer--------*/
+
+.footer {
+    background: #000; /* Footer background color */
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center; 
+}
+.footer-col-2 img{
+    text-align: center; /* Center-align images */
+    width: 180px; /* Adjust size for larger images */
+    margin-bottom: 10px; /* Add spacing below images */
+    mix-blend-mode: luminosity; /* Blend the images with the background */
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.footer-col-2 img:hover {
+    opacity: 1; /* Fully visible on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.footer img {
+    width: 100px; /* Make the images smaller */
+    margin: 10px auto; /* Center the images and add spacing */
+    mix-blend-mode: lighten; /* Blend the images with the background */
+    opacity: 0.8; /* Slight transparency for blending */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px; /* Minimum width for each column */
+    text-align: center; /* Center-align content */
+    margin-bottom: 20px; /* Add spacing between columns */
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 20%;
+    text-align: center; /* Center-align content */
+}
+ul{
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 100px; /* Make the images smaller */
+    margin: 10px auto; /* Center the images and add spacing */
+    mix-blend-mode: lighten; /* Blend the images with the background */
+    opacity: 0.8; /* Slight transparency for blending */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+.footer hr{
+    margin: 20px 0; /* Add spacing above and below the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid #8a8a8a; /* Add a solid line */
+    background: #b5b5b5; /* Line color */
+    height: 1px; /* Line height */
+}
+.copyright{
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add padding above and below */
+    color: #8a8a8a; /* Text color */
+}
+.menu-icon{
+    width: 30px;
+    margin-left: 20px;
+    display:  none;
+    
+}
+/*---------media query--------*/
+@media only screen and (max-width: 800px) {
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transform: max-height 0.5s ease;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        padding: 10px;
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+/*--------all products--------*/
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #c2afac;
+    padding: 10px;
+}
+select:focus{
+    outline: none;
+    border: 1px solid #cfaca7;
+}
+.page-btn{
+
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #cfaca7;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #cfaca7;
+    color: #fff;
+}
+
+/*----single product----*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    font-size: 22px;
+    margin: 20px 0;
+    color: #777;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
+.single-product input{
+    width: 50px;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #cfaca7;
+    margin-right: 10px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #cfaca7;
+}
+.single-product .fa{
+    color: #ff523b;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*-----cart page-----*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex: wrap;
+}
+th{
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+    background: #f78a8a;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+
+}
+td input{
+    width: 50px;
+    padding: 5px;
+    height: 40px;
+    border: 1px solid #cfaca7;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}   
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #f7a295;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/*-----account page-----*/
+.account-page{
+    margin: 80px auto;
+    background: radial-gradient(#ffd6d6,#fff); /* Wider radial gradient */
+    padding: 50px 0; /* Increase padding for a wider background */
+
+}
+.col-2 img{
+    mix-blend-mode: multiply; /* Blend the image with the background */
+    opacity: 0.9; /* Slight transparency */
+}
+.form-container{
+    width: 300px;
+    margin: auto;
+    padding: 20px 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    text-align: center; /* Center-align content */
+    position: relative; /* Position relative for absolute elements */
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 0.5s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: 1px solid #cfaca7;
+}
+form .btn{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegisterForm{
+    left: 0;
+}
+#indicator{
+    width: 100px;
+    height: 3px;
+    background: #ff523b;
+    position: absolute;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 0.5s;
+}
+
+/*---------media query for less than 600 screen size--------*/
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+    .col-2, .col-3, .col-4, .col-5{
+        flex-basis: 100%; /* Make each column take full width */
+        max-width: 100%; /* Ensure no max width */
+        margin-bottom: 20px; /* Add spacing between items */
+    }
+    .single-product .row{
+        text-align: left; /* Align text to the left */
+    }
+    .single-product .col-2{
+        padding: 20px 0; /* Remove padding */
+    }
+    .single-product h1{
+        font-size: 24px; /* Adjust font size */
+        line-height: 30px; /* Adjust line height */
+    }
+    .cart-info{
+        display: none; /* Hide cart info on small screens */
+    }
+}
